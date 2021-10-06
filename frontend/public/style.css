@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 16 px 62.5 = 10px = 1rem*/
+}
+body{
+
+    margin: 0;
+    font: 1.6rem Helvetica, Arial, sans-serif;
+height: 100vh;
+}
+.grid-container{
+    height: 100%;
+display: grid;
+grid-template-areas: 
+'header'
+'main'
+'footer';
+grid-template-columns: 1fr;
+grid-template-rows: 5rem 1fr 5rem;
+background-color: #EDEBE4;
+color: #417ca9;
+}
+
+header{
+grid-area: header;
+background-color:#417ca9;
+color: #EDEBE4;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.5rem;
+}
+
+header a{
+color: #EDEBE4;
+text-decoration: none;
+font-weight: bold ;
+}
+.brand{
+font-size: 3rem;
+
+}
+footer{
+background-color: #417ca9 ;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #000 ;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type:none ;
+    padding: 0; margin: 0; justify-content: center;
+}
+
+.products li{
+flex: 0 1 30rem;
+margin: 1rem;
+margin-bottom: 0;
+height: 42rem;
+border-top: 0.2rem solid #e0e0e0;
+}
+
+.products {
+
+display: inline-block;
+flex-direction: column;
+justify-content: space-around;
+height: 100%;
+
+}
+
+.products img{
+
+max-height: 26rem;
+max-width: 22rem;
+margin-top: 2rem;
+
+}
+
+.products-name{
+line-height: 2.2rem;
+}
+
+.products-brand {
+font-size: 1.2rem;
+color: #808080;
+}
+.products-price{
+font-size: 2rem;
+
+}
